@@ -1,0 +1,2 @@
+# whigagen
+Discord Receipt Bot
