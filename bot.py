@@ -66,28 +66,28 @@ def send_email(spoof_email, recipient_email, subject, html_content):
 async def generate(ctx):
     # template configs
     templates = {
-        1: {"name": "balenciaga", "email": "SMTP_EMAIL", "subject": "Order #ORDERNUMBER confirmed"}, # done #logo # prompts done
-        2: {"name": "corteiz", "email": "SMTP_EMAIL", "subject": "Order #{{ORDER_NUMBER}} confirmed"}, # done # prompts undone
-        3: {"name": "bape", "email": "SMTP_EMAIL", "subject": "Order #ORDER_NUMBER confirmed"}, # done # logo # prompts undone
-        4: {"name": "amazon", "email": "SMTP_EMAIL", "subject": "Order #ORDER_NUMBER confirmed"}, # done # logo # prompts undone
-        5: {"name": "stockx", "email": "SMTP_EMAIL", "subject": "🎉 Order Delivered! PRODUCT_NAME (SIZE)"}, # done # prompts undone
-        6: {"name": "farfetch", "email": "SMTP_EMAIL", "subject": "Your order will be with you soon"}, # done # logo # prompts undone
-        7: {"name": "moncler ", "email": "SMTP_EMAIL", "subject": "Thank you for your order"}, # done # logo # prompts undone
-        8: {"name": "dior", "email": "SMTP_EMAIL", "subject": "Your order confirmation"}, #done # logo # prompts undone
-        9: {"name": "Nike", "email": "SMTP_EMAIL", "subject": "Thank You for Your Order #ORDER_NUMBER"}, #done # logo # prompts undone
-        9: {"name": "Supreme", "email": "SMTP_EMAIL", "subject": "online shop order"}, #done # logo # prompts undone
-        10: {"name": "Ebay", "email": "SMTP_EMAIL", "subject": "Your purchase is confirmed"}, # done # logo # prompts undone
-        11: {"name": "Apple", "email": "SMTP_EMAIL", "subject": "We're processing your order ORDERNUMBER"}, # done # prompts undone
-        12: {"name": "Louis Vuitton", "email": "SMTP_EMAIL", "subject": "Your Louis Vuitton Order Has been Shipped"}, # prompts done
-        13: {"name": "SOON!", "email": "SMTP_EMAIL", "subject": ""}, # prompts undone
-        14: {"name": "Trapstar", "email": "SMTP_EMAIL", "subject": "Your Trapstar order has been placed"}, # prompts undone
-        15: {"name": "", "email": "SMTP_EMAIL", "subject": "Your Order Order invoice #ORDER_NUMBER"}, # prompts undone
-        16: {"name": "Dyson", "email": "SMTP_EMAIL", "subject": "Your Dyson order confirmation order_number" }, # prompts undone
-        17: {"name": "Goat", "email": "SMTP_EMAIL", "subject": "Your GOAT order #order_number"}, # prompts undone
-        18: {"name": "Prada", "email": "SMTP_EMAIL", "subject": "Prada - Order acknowledgement - order_number"}, # prompts undone
-        19: {"name": "Grailed", "email": "SMTP_EMAIL", "subject": "Congrats on your purchase!"}, # prompts undone
-        20: {"name": "Media Expert", "email": "SMTP_EMAIL", "subject": "tutaj cos bedzie"}, # prompts undone
-        21: {"name": "OffWhite", "email": "SMTP_EMAIL", "subject": "your pandabuy package has been seized"}, # prompts undone
+        1: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Order #ORDERNUMBER confirmed"}, # done #logo # prompts done
+        2: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Order #{{ORDER_NUMBER}} confirmed"}, # done # prompts undone
+        3: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Order #ORDER_NUMBER confirmed"}, # done # logo # prompts undone
+        4: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Order #ORDER_NUMBER confirmed"}, # done # logo # prompts undone
+        5: {"name": "shop", "email": "SMTP_EMAIL", "subject": "🎉 Order Delivered! PRODUCT_NAME (SIZE)"}, # done # prompts undone
+        6: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Your order will be with you soon"}, # done # logo # prompts undone
+        7: {"name": "shop ", "email": "SMTP_EMAIL", "subject": "Thank you for your order"}, # done # logo # prompts undone
+        8: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Your order confirmation"}, #done # logo # prompts undone
+        9: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Thank You for Your Order #ORDER_NUMBER"}, #done # logo # prompts undone
+        9: {"name": "shop", "email": "SMTP_EMAIL", "subject": "online shop order"}, #done # logo # prompts undone
+        10: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Your purchase is confirmed"}, # done # logo # prompts undone
+        11: {"name": "shop", "email": "SMTP_EMAIL", "subject": "We're processing your order ORDERNUMBER"}, # done # prompts undone
+        12: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Your shop Order Has been Shipped"}, # prompts done
+        13: {"name": "shop", "email": "SMTP_EMAIL", "subject": "shop"}, # prompts undone
+        14: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Your shop order has been placed"}, # prompts undone
+        15: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Your Order Order invoice #ORDER_NUMBER"}, # prompts undone
+        16: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Your shop order confirmation order_number" }, # prompts undone
+        17: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Your shop order #order_number"}, # prompts undone
+        18: {"name": "shop", "email": "SMTP_EMAIL", "subject": "shop - Order acknowledgement - order_number"}, # prompts undone
+        19: {"name": "shop", "email": "SMTP_EMAIL", "subject": "Congrats on your purchase!"}, # prompts undone
+        20: {"name": "shop", "email": "SMTP_EMAIL", "subject": "tutaj cos bedzie"}, # prompts undone
+        21: {"name": "shop", "email": "SMTP_EMAIL", "subject": "your pandabuy package has been seized"}, # prompts undone
     }
 
     if "★ customer" not in [role.name for role in ctx.author.roles]:
